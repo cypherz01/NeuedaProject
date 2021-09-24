@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
-    <title>Form</title>
+    <title>FormTC</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	
@@ -12,106 +12,203 @@
 		border: 1px solid black;
 		border-collapse: collapse;
 		}
+
+		
+		#pageTitle{
+		font-size: 50px;
+		}
+		
+		#fieldTitle{
+		font-size: 20px;
+		}
+		
+		#body{
+		background-color: "whitesmoke";
+		}
+		
 	</style>
 		
 	
   </head>
-  <body>
+  <body style="background-color: whitesmoke">
     <form>
 	<div class="container">
 	<div class="row">
-	<div class="col-sm">
-      <div class="form-group row">
-        <label for="firstName" class="col-4 col-form-label">First Name</label> 
-        <div class="col-8">
-          <input id="firstName" name="firstName" type="text" class="form-control">
-        </div>
-      </div>
-      <div class="form-group row">
-        <label for="lastName" class="col-4 col-form-label">Last Name</label> 
-        <div class="col-8">
-          <input id="lastName" name="lastName" type="text" class="form-control">
-        </div>
-      </div>
-      <div class="form-group row">
-        <label class="col-4">Gender</label> 
-        <div class="col-8">
-          <div class="custom-control custom-radio custom-control-inline">
-            <input name="gender" id="gender_0" type="radio" class="custom-control-input" value="male"> 
-            <label for="gender_0" class="custom-control-label">Male</label>
-          </div>
-          <div class="custom-control custom-radio custom-control-inline">
-            <input name="gender" id="gender_1" type="radio" class="custom-control-input" value="female"> 
-            <label for="gender_1" class="custom-control-label">Female</label>
-          </div>
-          <div class="custom-control custom-radio custom-control-inline">
-            <input name="gender" id="gender_2" type="radio" class="custom-control-input" value="nonBinary"> 
-            <label for="gender_2" class="custom-control-label">Non-Binary</label>
-          </div>
-        </div>
-      </div>
-      <div class="form-group row">
-        <label for="carMake" class="col-4 col-form-label">Car Make</label> 
-        <div class="col-8">
-          <input id="carMake" name="carMake" type="text" class="form-control">
-        </div>
-      </div>
-      <div class="form-group row">
-        <label for="licensePlate" class="col-4 col-form-label">License Plate</label> 
-        <div class="col-8">
-          <input id="licensePlate" name="licensePlate" type="text" class="form-control">
-        </div>
-      </div>
-      <div class="form-group row">
-        <label for="mileage" class="col-4 col-form-label">Mileage</label> 
-        <div class="col-8">
-          <input id="mileage" name="mileage" type="text" class="form-control">
-        </div>
-      </div> 
-      <div class="form-group row">
-        <div class="offset-4 col-8">
-          <button name="submit" type="submit" class="btn btn-primary">Submit</button>
-        </div>
-      </div>
+		<div class=col-lg-12 "col-lg-offset-2">
+			<form align = "center">
+				<div class = "row">
+					<div class="col-md" align="center" style="background-color: lightblue">
+						<div class="form-group">
+							<label id="pageTitle">Practise Form</label>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
 	</div>
-	
-	<div class="col-sm">
-		<table  style = "width=100%">
-<tbody>
-<tr>
-<td>First Name</td>
-<td>Last Name</td>
-<td>Gender</td>
-<td>Car Make</td>
-<td>License Plate</td>
-<td>Mileage</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-	
+	<div class="row">
+		<div class=col-lg-12 "col-lg-offset-2">
+			<form align = "center">
+				<div class = "row">
+					<div class="col-md-6" align="left">
+						<div class="form-group">
+							<label id ="fieldTitle"for="firstName">First Name</label>
+							<input id="firstName" name="firstName" type="text" class="form-control" aria-describedby="firstNameHelpBlock" required="required"> 
+							<span id="firstNameHelpBlock" class="form-text text-muted">e.g. John</span>
+						</div>
+					</div>
+					<div class="col-md-6" align="left">
+						<div class="form-group"> 
+							<label id ="fieldTitle"for="surname">Surname</label> 
+							<input id="surname" name="surname" type="text" class="form-control" aria-describedby="surnameHelpBlock" required="required"> 
+							<span id="surnameHelpBlock" class="form-text text-muted">e.g. Doe</span>
+						</div>
+					</div>	
+				</div>
+				
+				<div class = "row">
+					<div class="col-md-4" align="left"> 
+						<div class="form-group">
+							<label id ="fieldTitle" for="age">Age</label>
+							<input id="age" name="age" type="text" class="form-control" aria-describedby="ageHelpBlock" required="required"> 
+							<span id="ageHelpBlock" class="form-text text-muted">e.g. 20</span>
+						</div>
+					</div>
+					<div class="col-md-4" align="left">
+						<label id ="fieldTitle" for="gender">Gender</label> 
+						<div class="form-group">
+							<select id="gender" name="gender" class="custom-select" required="required">
+								<option value="male">Male</option>
+								<option value="female">Female</option>
+								<option value="nonBinary">Non-Binary</option>
+								<option value="notSaid">Prefer Not To Say</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				
+				<div class = "row">
+					<div class="col-md-12" align="left">
+						<div class="form-group">
+							<label id ="fieldTitle" for="address" class="col-form-label">Address</label> 
+							<input id="address" name="address" type="text" class="form-control" aria-describedby="addressHelpBlock" required="required"> 
+							<span id="addressHelpBlock" class="form-text text-muted">e.g. 123 anystreet</span>
+						</div>
+					</div>
+				</div>
+				
+				<div class = "row">
+					<div class="col-md-12" align="left">
+						<div class="form-group">
+							<label id ="fieldTitle" for="phoneNumber">Phone Number</label>
+							<input id="phoneNumber" name="phoneNumber" type="text" class="form-control" aria-describedby="phoneNumberHelpBlock" required="required"> 
+							<span id="phoneNumberHelpBlock" class="form-text text-muted">e.g. 028 8888 8888</span>
+						</div>
+					</div>
+				</div>
+				
+				<div class = "row">
+					<div class="col-md-12" align="left">
+						<div class="form-group">
+							<label id ="fieldTitle" for="carMake">Car Make</label> 
+								<input id="carMake" name="carMake" type="text" class="form-control" aria-describedby="carMakeHelpBlock" required="required"> 
+								<span id="carMakeHelpBlock" class="form-text text-muted">e.g. Honda Civic</span>
+						</div>
+					</div>
+				</div>
+				
+				<div class = "row">
+					<div class="col-md-6" align="left">
+						<div class="form-group">
+							<label id ="fieldTitle" for="carAge">Car Age</label> 
+							<select id="carAge" name="carAge" class="custom-select" required="required">
+								<option value="0">< 1</option>
+								<option value="1">1 - 4</option>
+								<option value="2">5 - 9</option>
+								<option value="3">10 +</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6" align="left">
+						<div class="form-group">
+							<label id ="fieldTitle" for="carMileage">Car Age</label> 
+							<select id="carMileage" name="carMileage" class="custom-select" required="required">
+								<option value="0">< 1000 </option>
+								<option value="1">1,000 - 4,000 </option>
+								<option value="2">5,000 - 9,000 </option>
+								<option value="3">10,000 + </option>
+							</select>
+						</div>
+					</div>
+				</div>
+				
+				<div class = "row">
+					<div class="col-md-10" align="left">
+						<label id ="fieldTitle">Is this car for Commercial use?</label> 
+						<div>
+							<div class="custom-control custom-radio custom-control-inline">
+								<input name="radioCarUse" id="radioCarUse_0" type="radio" class="custom-control-input" value="commercial" required="required"> 
+								<label for="radioCarUse_0" class="custom-control-label">this car is for commercial use.</label>
+							</div>
+							<div class="custom-control custom-radio custom-control-inline">
+								<input name="radioCarUse" id="radioCarUse_1" type="radio" class="custom-control-input" value="nonCommercial" required="required"> 
+								<label for="radioCarUse_1" class="custom-control-label">this car is not for commercial use.</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class = "row">
+					<div class="col-md-12" align="left">
+						<label id ="fieldTitle" for="extraText">Any other information?</label> 
+						<div>
+							<textarea id="extraText" name="extraText" cols="40" rows="5" class="form-control" required="required" aria-describedby="extraTextHelpBlock"></textarea> 
+							<span id="extraTextHelpBlock" class="form-text text-muted">enter N/A if no other information is needed.</span>
+						</div>
+					</div> 
+				</div>
+				
+				<div class = "row">
+					<div class="col-md-10" align="left">
+						<button name="submit" type="submit" class="btn btn-primary">Submit</button>
+					</div>
+				</div>
+				
+			</form>
+		</div>
 	</div>
-	</div>
-	
+
     </form>
   </body>
 </html>
+
+<script>
+
+    let url = "https://6141b9f6357db50017b3dc56.mockapi.io/names";
+
+    var button = document.querySelector("button");
+    button.onclick=function(){
+
+        let form = document.querySelector("form");
+
+        fetch(url,
+        {
+            method:"POST",
+            body: new FormData(form)
+        })
+        .then(function(response){
+            console.log(response);
+        });
+
+    };
+
+    fetch(url).then(function (response)
+    {
+        return response.json();
+    }).then(function (data){
+        console.log(data);
+    }).catch(function (error){
+        console.log(error);
+    });
+
+</script>
