@@ -70,14 +70,20 @@
 					<div class="col-md-4" align="left"> 
 						<div class="form-group">
 							<label id ="fieldTitle" for="age">Age</label>
-							<input id="age" name="age" type="text" class="form-control" aria-describedby="ageHelpBlock" required="required"> 
-							<span id="ageHelpBlock" class="form-text text-muted">e.g. 20</span>
+							<select id="age" name="age" class="custom-select" required="required">
+								<option value="">Select...</option>
+								<option value="0">18-24</option>
+								<option value="1">25-39</option>
+								<option value="2">40-54</option>
+								<option value="3">55+</option>
+							</select>
 						</div>
 					</div>
 					<div class="col-md-4" align="left">
 						<label id ="fieldTitle" for="gender">Gender</label> 
 						<div class="form-group">
 							<select id="gender" name="gender" class="custom-select" required="required">
+								<option value="">Select...</option>
 								<option value="male">Male</option>
 								<option value="female">Female</option>
 								<option value="nonBinary">Non-Binary</option>
@@ -118,10 +124,11 @@
 				</div>
 				
 				<div class = "row">
-					<div class="col-md-6" align="left">
+					<div class="col-md-3" align="left">
 						<div class="form-group">
 							<label id ="fieldTitle" for="carAge">Car Age</label> 
 							<select id="carAge" name="carAge" class="custom-select" required="required">
+								<option value="">select...</option>
 								<option value="0">< 1</option>
 								<option value="1">1 - 4</option>
 								<option value="2">5 - 9</option>
@@ -129,10 +136,11 @@
 							</select>
 						</div>
 					</div>
-					<div class="col-md-6" align="left">
+					<div class="col-md-3" align="left">
 						<div class="form-group">
-							<label id ="fieldTitle" for="carMileage">Car Age</label> 
+							<label id ="fieldTitle" for="carMileage">Car Mileage</label> 
 							<select id="carMileage" name="carMileage" class="custom-select" required="required">
+								<option value="">select...</option>
 								<option value="0">< 1000 </option>
 								<option value="1">1,000 - 4,000 </option>
 								<option value="2">5,000 - 9,000 </option>
